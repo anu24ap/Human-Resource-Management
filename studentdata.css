@@ -1,0 +1,19 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 19, 2018, 3:06:45 PM
+    Author     : Celina Gupta
+*/
+
+.background {
+    -fx-background-image: url("10.jpg");
+    -fx-background-repeat: repeat;
+    -fx-background-size: cover;
+    -fx-background-color: transparent;
+       /* linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),
+        linear-gradient(#20262b, #191d22),
+        radial-gradient(center 50% 0%, radiu2s 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));*/
+}

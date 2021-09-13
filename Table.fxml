@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="page" prefHeight="872.0" prefWidth="1306.0" stylesheets="@table.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="demo.TableController">
+   <children>
+      <TableView fx:id="table" editable="true" fixedCellSize="30.0" layoutY="58.0" prefHeight="764.0" prefWidth="1125.0" stylesheets="@table.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="58.0">
+        <columns>
+          <TableColumn fx:id="name" prefWidth="150.0" text="First Name" />
+            <TableColumn fx:id="surname" minWidth="0.0" prefWidth="150.0" text="Last Name" />
+            <TableColumn fx:id="age" prefWidth="150.0" text="Age" />
+            <TableColumn fx:id="internship" prefWidth="200.0" text="Course Duration">
+               <columns>
+                  <TableColumn prefWidth="100.0" text="Start Date" />
+                  <TableColumn prefWidth="100.0" text="End Date" />
+               </columns>
+            </TableColumn>
+            <TableColumn fx:id="action" minWidth="0.0" prefWidth="150.0" text="Hiring Status" />
+        </columns>
+      </TableView>
+      <AnchorPane layoutY="2.0" prefHeight="59.0" prefWidth="1306.0" style="-fx-background-color: #aaaac0;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXButton layoutX="992.0" layoutY="14.0" onAction="#add" style="-fx-border-width: 0px0px2px0px; -fx-border-color: white;" text="Add Student" textFill="WHITE" AnchorPane.bottomAnchor="11.0" AnchorPane.rightAnchor="28.0" AnchorPane.topAnchor="14.0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="979.0" layoutY="14.0" onAction="#invite" style="-fx-border-width: 0px0px2px0px; -fx-border-color: white;" text="Invite Student" textFill="WHITE" AnchorPane.bottomAnchor="11.0" AnchorPane.rightAnchor="207.0" AnchorPane.topAnchor="14.0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <TextField fx:id="searchField" layoutX="20.0" layoutY="10.0" prefHeight="35.0" prefWidth="432.0" promptText="Search here" style="-fx-background-color: #fafafa;" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="10.0" />
+            <FontAwesomeIconView fill="#7c7a7a" glyphName="SEARCH" layoutX="427.0" layoutY="26.0" size="16" translateY="6.0" wrappingWidth="17.0" AnchorPane.bottomAnchor="29.401785850524902" AnchorPane.topAnchor="12.285714149475098" />
+         </children>
+      </AnchorPane>
+      <Pagination fx:id="pagination" layoutY="58.0" prefHeight="814.0" prefWidth="1312.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="58.0" />
+   </children>
+</AnchorPane>
